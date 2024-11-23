@@ -1,0 +1,641 @@
+/* Reset e estilo geral */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #202020;
+}
+
+#home {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    z-index: 10;
+    background-color:rgba(0, 0, 0, 0.39);
+    padding: 0 20px;
+
+    top: 0px;
+    position: fixed;
+    z-index: 500;
+
+     /* Garante que o header ocupe toda a largura da janela */
+    max-width: none; /* Remove limites adicionais */
+    padding: 0 20vw; /* Mantém o espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    backdrop-filter: blur(5px);
+    
+}
+
+header > nav {
+    display: flex;
+    gap: 15px; 
+    
+}
+
+.bntNav{
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    position: relative; /* Necessário para posicionar o ::after */
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 5px; /* Opcional, ajusta o espaço ao redor do texto */
+}
+
+.bntNav::after {
+    content: ''; /* Cria um elemento vazio */
+    position: absolute; /* Permite posicionamento relativo ao <a> */
+    bottom: 0; /* Posiciona na parte inferior do <a> */
+    left: 0;
+    width: 100%; /* Cobre toda a largura do link */
+    height: 10%; /* Define a altura como 10% do <a> */
+    background-color: rgb(255, 255, 255); /* Cor de fundo desejada */
+    z-index: -1; /* Garante que fique atrás do texto */
+}
+
+
+header > nav > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: border 0.3s ease;
+}
+
+
+main {
+    width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    position: relative; /* Necessário para o posicionamento da camada de fundo */
+    background-color: rgba(0, 0, 0, 0.603);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+.main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/fundo3.jpg);
+    background-color: #EB6234;
+    background-size: cover;
+    filter: blur(3px); /* Aplica o desfoque */
+    z-index: -1; /* Coloca a camada de fundo atrás do conteúdo */
+
+   
+}
+
+main > div {
+    position: relative; /* Garante que o conteúdo fique em cima da camada de fundo */
+    z-index: 1;
+}
+
+
+
+
+#logoMain {
+    height: 200px;
+}
+
+#ladoA{
+    margin: 20px;
+    text-align: center; /* Centraliza texto no mobile */
+    display: flex;
+    flex-direction: column;
+}
+
+main > div > h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: "Hammersmith One", sans-serif;
+    font-style: normal;
+}
+
+main > div > p {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#arteMain {
+    height: 100%;
+    margin: 20px;
+    width: 100%; /* Ajusta para mobile */
+    object-fit: cover; /* Garante que a imagem não deforme */
+}
+
+
+
+
+
+.motivoCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+#secSobre{
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Bio{
+    min-height: 100vh;
+    width: 300px;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+#Bio>div>p{
+    color: white;
+    font-size: 20px;
+}
+
+.card {
+    width: 350px;
+    max-width: 80vw;
+    height: 500px;
+    max-height: 70vh;
+    background: #011522;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+    
+   }
+   
+   .card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #f76531;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .card span {
+
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding-top: 3vh;
+    
+    
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+   }
+   
+   .card .job {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+    
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+   }
+   
+   .card .img {
+    width: 50%;
+    height: 50%;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+
+    border: 5px solid #f76531;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   }
+   
+   #fotoPerfil{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+   }
+   .card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+   }
+   
+   .card button:hover {
+    background: #534bf3;
+   }
+
+
+
+
+   
+.cardRS {
+    margin: 50px;
+    width: 300px;
+    
+    max-width: 50vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 5px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+
+
+
+#segSection {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 0;
+    width: 100vw;
+    min-height: 50vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+    
+}
+
+
+#segSection>div{
+    margin: 5% ;
+}
+
+
+#infSegSec{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#infSegSec>h1{
+    font-size: 2em;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    
+    text-transform: uppercase;
+    
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+     
+}
+
+#infSegSec>img{
+    width: 500px;
+    max-width:80vw;
+}
+
+#infSegSec>h2{
+    font-size: 1.5em;
+    font-size: 40px;
+    font-family: "Hammersmith One", sans-serif;
+    font-style: normal
+     
+}
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    width: 70%;
+    max-width: 600px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+
+
+
+#TercSection{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#TercSection>div{
+    margin: 50px;
+}
+
+#conteinerFeedBack{
+    align-items: center;
+    text-align: center;
+    
+}
+#iconefeedback{
+   width: 300px;
+    
+}
+
+#textfeedbaaak{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80vw;
+}
+
+#listaFedback{
+    height: 60vh;
+    max-height: 600px;
+    width: 80vw;
+    max-width: 800px;
+    overflow-x: hidden;
+    
+}
+
+#listaFedback::-webkit-scrollbar {
+    width: 10px; /* Largura da barra */
+}
+
+#listaFedback::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fundo da barra */
+    border-radius: 5px;
+}
+
+#listaFedback::-webkit-scrollbar-thumb {
+    background: #404040; /* Cor da barra */
+    border-radius: 5px;
+}
+
+#listaFedback::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+}
+
+.CardComentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.CardComentario>img{
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+#iconeFeedback{
+    width: 500px;
+    max-width:80vw;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    header > nav {
+        flex-wrap: wrap; /* Permite que os links fiquem em linha dupla */
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column; /* Alinha elementos verticalmente */
+        gap: 20px;
+    }
+
+    main > div > h1 {
+        font-size: 3rem; /* Reduz tamanho do título */
+    }
+
+    main > div > p {
+        font-size: 0.9rem; /* Ajusta tamanho do parágrafo */
+    }
+
+    #logoMain {
+        height: 150px; /* Reduz tamanho no mobile */
+    }
+
+    #arteMain {
+        max-height: 40vh; /* Ajusta altura da imagem no mobile */
+    }
+
+    .button-30 {
+        font-size: 16px;
+        height: 44px; /* Ajusta altura do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    main > div > h1 {
+        font-size: 2rem; /* Reduz mais o título para telas muito pequenas */
+    }
+
+    main > div > p {
+        font-size: 0.8rem; /* Reduz ainda mais o parágrafo */
+    }
+
+    #arteMain {
+        max-height: 30vh; /* Ajusta imagem para telas menores */
+    }
+
+    .button-30 {
+        font-size: 14px; /* Botão mais compacto */
+        padding: 0 10px;
+    }
+}
+
+
+

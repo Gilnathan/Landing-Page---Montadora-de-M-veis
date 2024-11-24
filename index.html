@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gil Montador</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" sizes="16x16"  href="favicon-16x16.png">
     
 
@@ -32,7 +32,7 @@
                 
             </div>
             
-            <div id="ladoB">
+            <div id="ladoB" data-aos="fade-down" >
                 <h3 class="motivoCard"> ✅ Profissionais qualificado </h3>
                 <h3 class="motivoCard"> ✅ Agilidade no atendimento </h3>
                 <h3 class="motivoCard"> ✅ Garantia de qualidade </h3>
@@ -41,11 +41,11 @@
     </section>
 
 
-    <section id="secSobre">
+    <section id="secSobre"  data-aos="fade-left" >
 
         
 
-        <div class="card">
+        <div class="card" data-aos="fade-right" >
             <div class="card-border-top">
             </div>
             <div class="img">
@@ -56,7 +56,7 @@
         </div>
 
 
-        <div id="Bio">
+        <div id="Bio" >
             <div>
                 <p>Sou Gildeson, marceneiro há 6 anos, dedicado a transformar ideias em móveis que combinam qualidade e funcionalidade. Estou disponível para fazer orçamentos gratuitos e sempre atendo com prazer. É só entrar em contato comigo pelo Instagram ou WhatsApp. Será um prazer ajudá-lo(a) no seu projeto!</p>
             </div>
@@ -84,7 +84,8 @@
     </section>
     <section id="segSection">
 
-        <div id="infSegSec">
+        <div id="infSegSec" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" >
             
               
                <img src="imagens/Azul e branco ilustração simples montador de móveis post para instagram (1).png" alt="" >
@@ -92,7 +93,7 @@
         </div>
 
 
-        <div class="carousel-container">
+        <div class="carousel-container" data-aos="flip-left" >
             <button class="carousel-btn prev-btn">&#10094;</button>
             <div class="carousel">
                 <div class="carousel-item"><img src="imagens/1.jpeg" alt="Imagem 1"></div>
@@ -109,12 +110,13 @@
 
     <section id="TercSection">
 
-        <div id="conteinerFeedBack">
+        <div id="conteinerFeedBack" data-aos="flip-up" >
             <img src="imagens/feedback/customer-service.png" id="iconeFeedback">
             <h1 id="textfeedbaaak"> feedback</h1>
         </div>
 
-        <div id="listaFedback">
+        <div id="listaFedback" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" >
             <div class="CardComentario"> <img src="imagens/feedback/1.PNG" alt=""></div>
             <div class="CardComentario"> <img src="imagens/feedback/1.PNG" alt=""></div>
             <div class="CardComentario"> <img src="imagens/feedback/1.PNG" alt=""></div>
@@ -128,7 +130,10 @@
     
     
 
-   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="script.js"></script>
 </body>

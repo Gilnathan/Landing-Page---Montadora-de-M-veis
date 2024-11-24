@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 Landing Page - Montadora de Móveis
 Este projeto é uma Landing Page para a Montadora de Móveis [Nome da Empresa]. A página foi desenvolvida com o objetivo de apresentar os produtos e serviços da empresa de forma atraente, com foco em conversões (como preenchimento de formulários de contato). O design é simples, mas eficaz, com uma navegação intuitiva e responsiva para qualquer dispositivo.
 

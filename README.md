@@ -6,11 +6,6 @@ HTML5 - Para estruturar o conteúdo da página.
 CSS3 - Para estilizar a página e torná-la visualmente atraente.
 JavaScript - Para interatividade e animações na página.
 
-![Uploading screencapture-127-0-0-1-5500-index-html-2024-11-24-21_19_29.png…]()
-
-
-Captura de tela ou link para o deploy online da landing page.
-
 🚀 Como Rodar o Projeto Localmente
 Para rodar o projeto localmente em sua máquina, siga os passos abaixo:
 

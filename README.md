@@ -6,13 +6,10 @@ HTML5 - Para estruturar o conteúdo da página.
 CSS3 - Para estilizar a página e torná-la visualmente atraente.
 JavaScript - Para interatividade e animações na página.
 
-<<<<<<< Updated upstream
-=======
+
+<img src="imagens/feedback/-index-html-plint.png" alt="">
 
 
-Captura de tela ou link para o deploy online da landing page.
-
->>>>>>> Stashed changes
 🚀 Como Rodar o Projeto Localmente
 Para rodar o projeto localmente em sua máquina, siga os passos abaixo:
 
